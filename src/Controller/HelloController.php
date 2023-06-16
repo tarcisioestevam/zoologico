@@ -18,4 +18,10 @@ class HelloController
     {
         return new Response('Olá, dinossauro!');
     }
+
+    #[Route(path: '/mamiferos')]
+    public function mamifero(): Response
+    {
+        return new Response('Olá, mamíferos!');
+    }
 }
