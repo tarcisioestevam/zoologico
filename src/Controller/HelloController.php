@@ -12,4 +12,10 @@ class HelloController
     {
         return new Response('Olá!');
     }
+
+    #[Route(path: '/dinossauros')]
+    public function dinossauro(): Response
+    {
+        return new Response('Olá, dinossauro!');
+    }
 }
