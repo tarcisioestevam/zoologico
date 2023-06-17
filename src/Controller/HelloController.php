@@ -36,4 +36,10 @@ class HelloController
     {
         return new Response('Olá, moluscos!');
     }
+
+    #[Route(path: '/insetos')]
+    public function inseto(): Response
+    {
+        return new Response('Olá, insetos!');
+    }
 }
