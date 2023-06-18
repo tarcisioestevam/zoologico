@@ -1,9 +1,13 @@
-<h1>{{ title }}</h1>
-<p>Bem-vindo ao nosso site</p>
+{% extends 'base.html.twig' %}
 
-<ul>
-{# Este é o laço de usuários #}
-{% for user in users %}
-    <li>Nome: {{ user.name }} - Telefone: {{ user.phone }}</li>
-{% endfor %}
-</ul>
+{% block body%}
+    <h1>{{ title }}</h1>
+    <p>Bem-vindo ao nosso site</p>
+
+    <ul>
+    {# Este é o laço de usuários #}
+    {% for user in users %}
+        <li>Nome: {{ user.name }} - Telefone: {{ user.phone }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
